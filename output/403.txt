@@ -1,0 +1,7 @@
+2022-10-21 11:26:58.881352_https://lynt.cz/.git/HEAD_80_{'User-Agent': 'Mozilla/5.0 (X11; NetBSD) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/27.0.1453.116 Safari/537.36'}
+2022-10-21 11:27:50.940209 | https://lynt.cz/.git/HEAD | 80 | {'User-Agent': 'Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/35.0.3319.102 Safari/537.36'}
+2022-10-21 11:49:45.723558 | http://lynt.cz | 80 | {'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1944.0 Safari/537.36'}
+2022-10-21 11:52:29.100454 | lynt.cz | 80 | {'User-Agent': 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2227.0 Safari/537.36'}
+2022-10-21 11:52:48.321041 | lynt.cz | 443 | {'User-Agent': 'Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/27.0.1453.93 Safari/537.36'}
+2022-10-21 11:55:15.841787 | lynt.cz | 80 | {'User-Agent': 'Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2224.3 Safari/537.36'}
+2022-10-21 11:55:16.077244 | lynt.cz | 443 | {'User-Agent': 'Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2224.3 Safari/537.36'}
