@@ -2,6 +2,7 @@ import requests
 import random
 import os
 
+from tqdm import tqdm
 from fake_useragent import UserAgent
 
 from app import exporter
@@ -21,7 +22,7 @@ def read_inputs():
 
 
 def run_scan(targets):
-    for _ in range(10):
+    for _ in tqdm(range(100)):
         target = random.choice(targets)
         request_header = {'User-Agent': UserAgent().chrome}
         for port in ports.keys():
