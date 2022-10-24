@@ -22,7 +22,8 @@ def read_inputs():
 
 
 def run_scan(targets):
-    for _ in tqdm(range(100)):
+    git_pattern = 'ref: refs/heads/main'
+    for _ in tqdm(range(10000)):
         target = random.choice(targets)
         request_header = {'User-Agent': UserAgent().chrome}
         for port in ports.keys():
@@ -31,9 +32,15 @@ def run_scan(targets):
             try:
                 r = requests.get(full_target, headers=request_header)
                 status = r.status_code
+                if status == 200 and (git_pattern in str(r.content)):
+                    status = f'{str(status)}_with_git'
+                    print(full_target, r.content)
             except requests.exceptions.ConnectionError:
                 status = 'Failed'
-            exporter.export_scan_results(target, port, status, request_header)
+            except requests.exceptions.TooManyRedirects:
+                status = 'Redirection loops'
+            finally:
+                exporter.export_scan_results(target, port, status, request_header)
 
 
 if __name__ == "__main__":

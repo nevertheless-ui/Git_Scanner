@@ -1,6 +1,7 @@
 import os
-from datetime import datetime
 
+
+from datetime import datetime
 
 
 def export_scan_results(host, port, request_code, header):
